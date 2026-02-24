@@ -7,7 +7,8 @@ from task.app.main import run
 run(
     deployment_name='gpt-4o',
     # TODO:
-    #  Use `max_tokens` parameter with value 10
+    #  Use `max_tokens` parameter with value 10,
+    max_tokens=100
 )
 
 # Previously, we have seen that the `finish_reason` in choice was `stop`, but now it is `length`, and if you check the
